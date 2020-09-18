@@ -1,14 +1,53 @@
-/** {
-  margin: 0; Removes all browser settings
-  padding: 0;
+{
+  margin: 0;
+  Removes all browser settings padding: 0;
   box-sizing: border-box;
-}*/
+}
 
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  height: 80px;
+  justify-content: flex-end;
+}
+
+.shirt-images {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.shirt-images>* {
+  margin-top: 20px;
+}
+
+.header {
+  height: 100px;
+}
+
+.content {
+  background-color: #EAEDF0;
+  height: 600px;
+}
 
 body {
-  color: #414141; /*Dark Gray*/
-	background-color: #EEEEEE; /*Light Gray*/
-	margin: 20px 150px;
+  color: #414141;
+  /*Dark Gray*/
+  background-color: #EEEEEE;
+  /*Light Gray*/
+  margin: 20px 150px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,20 +55,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 36px;
+  font-size: 36px;
 }
+
 h2 {
-	font-size: 28px;
+  font-size: 28px;
 }
 
 ol {
   list-style-type: lower-roman;
 }
 
-
 a {
-	text-decoration: none;
-	color: #414141;
+  text-decoration: none;
+  color: #414141;
   font-weight: bold;
 }
 
@@ -42,8 +81,7 @@ p {
   margin: 0;
   padding: 0;
   overflow: hidden;
-	color: #414141
-  background-color: #333;
+  color: #414141 background-color: #333;
 }
 
 .navigationbar-li {
@@ -58,9 +96,8 @@ p {
   text-decoration: none;
 }
 
-
 /* Change the link color to #C8C8C8 (darker gray) on hover */
-.navigationbar-li-a:hover{
+.navigationbar-li-a:hover {
   background-color: #C8C8C8;
 }
 
@@ -70,6 +107,27 @@ p {
   text-align: center;
   padding: 10px 30px;
   text-decoration: none;
-	border: 1px solid black;
-	box-sizing: border-box;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    /* Blue */
+  }
 }
